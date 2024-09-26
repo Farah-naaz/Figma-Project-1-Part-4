@@ -1,0 +1,372 @@
+/* ========= common css part start ========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap');
+
+
+/* ;;;;;;;;; common css part end ;;;;;;;;;;;; */
+
+/* ========= common css part start ========== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+/* ;;;;;;;;; common css part end ;;;;;;;;;;;; */
+
+/* ========= menu part start ========== */
+
+#main_menu{
+    padding-top: 52px;
+}
+.menu_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_col ul{
+    display: flex;
+    gap: 59px;
+}
+.menu_col ul li a{
+font-size: 24px;
+font-weight: 600;
+font-family: "Poppins", sans-serif;
+color: #000000;
+transition: all linear .3s;
+}
+.menu_col ul li a:hover{
+    color: #FDBB57;
+}
+.menu_buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.menu_buttons a{
+    width: 121px;
+    height: 57px;
+    background: transparent;
+    border: 1px solid #FDBB57;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 57px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: all linear .4s;
+  
+
+}
+.menu_buttons a:hover{
+    background: #FDBB57;
+    box-shadow: none;
+}
+/* ;;;;;;;;; menu part end ;;;;;;;;;;;; */
+
+/* ========= banner part start ========== */
+
+#banner{
+    padding-top: 112px;
+}
+.banner_row{
+    display: flex;
+    justify-content: space-between;
+}
+.banner_text_col h1{
+width: 437px;
+font-size: 64px;
+font-weight: 600;
+font-family: "Poppins", sans-serif;
+color: #000000;
+margin-bottom: 38px;
+}
+.banner_text_col p{
+    width: 531px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    margin-bottom: 76px;
+}
+.banner_button a{
+    width: 319px;
+    height: 86px;
+    background: #000000;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 86px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+}
+/* ;;;;;;;;; banner part end ;;;;;;;;;;;; */
+
+/* ========= collections part start ========== */
+#collections{
+    padding-top: 100px;
+    padding-bottom: 214px;
+}
+.collections_head h2{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #000000;
+    text-align: center;
+}
+.collections_head p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-top: 41px;
+    margin-bottom: 40px;
+}
+.collections_cards_row{
+    display: flex;
+    justify-content: space-between;
+}
+.collections_cards_row .collections_first_card{
+    width: 349px;
+    height: 402px;
+    background: url(../images/collection_1.png);
+    position: relative;
+    overflow: hidden
+}
+.collections_first_card:hover a{
+    left: 17px;
+    
+}
+.collections_first_card a{
+    width: 315px;
+    height: 57px;
+    background: rgb(110, 156, 110);
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    text-align: center;
+    line-height: 57px;
+    position: absolute;
+    top: 10%;
+    left: -350px;
+    transition: all linear .6s;   
+}
+.collections_cards_row .collections_second_card{
+    width: 349px;
+    height: 402px;
+    background: url(../images/collection_2.png);
+    position: relative;
+    overflow: hidden
+}
+.collections_second_card a{
+    width: 315px;
+    height: 57px;
+    background: rgb(81, 160, 194);
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    text-align: center;
+    line-height: 57px;
+    position: absolute;
+    bottom: -100px;
+    right: 16px;
+    transition: all linear .6s;   
+}
+.collections_second_card:hover a{
+    bottom: 44px;
+}
+.collections_cards_row .collections_third_card{
+    width: 349px;
+    height: 402px;
+    background: url(../images/collection_3.png);
+    position: relative;
+    overflow: hidden
+}
+.collections_third_card a{
+    width: 315px;
+    height: 57px;
+    background: rgb(170, 150, 130);
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    text-align: center;
+    line-height: 57px;
+    position: absolute;
+    bottom: 40%;
+    right: -400px;
+    transition: all linear .6s;   
+}
+.collections_third_card:hover a{
+    right: 16px;
+}
+/* ;;;;;;;;; collections part end ;;;;;;;;;;;; */ 
+
+/* ========= fashion part start ========== */
+.main_fashion{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+}
+.fashion_text h2{
+    width: 387px;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #000000;
+}
+.fashion_text p{
+    width: 443px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #000000;  
+    margin-top: 63px;
+    margin-bottom: 136px;
+}
+.fashion_counter{
+    width: 918px;
+    padding: 69px 90px 69px 29px;
+    background: #FEECC8;
+    border-radius: 20px;
+    display: flex;
+}
+.fashion_counter .single_count .single_count_text h2{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Podkova", serif;
+    color: #000000;
+}
+.fashion_counter .single_count .single_count_text p{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+}
+.single_count .line{
+    width: 143px;
+    height: 1px;
+    background: #000000;
+    display: inline-block;
+    margin-top: 69px;
+    transform: rotate(90deg)
+}
+.single_count{
+    display: flex;
+}
+.fashion_image{
+    position: absolute;
+    top: -141px;
+    left: -134px;
+}
+/* ;;;;;;;;; fashion part end ;;;;;;;;;;;; */
+
+/* ========= footer part start ========== */
+#footer{
+    margin-top: 94px;
+    padding-top: 35px;
+    padding-bottom: 192px;
+    background: #CFA485;
+}
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_cards{
+    display: flex;
+    gap: 31px;
+}
+.footer_single_card{
+    width: 366px;
+    background: #FFFFFF;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+.footer_card_text{
+    padding-left: 22px;
+}
+.footer_text_col h2{
+    width: 315px;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #FFFFFF;
+}
+.footer_text_col p{
+    width: 437px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #FFFFFF;
+    margin-top: 43px;
+    margin-bottom: 40px;
+}
+.footer_text_col a{
+    width: 319px;
+    height: 86px;
+    background: #000000;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 86px;
+    transition: all linear .3s;
+}
+.footer_row a:hover{
+    background: #FDBB57;
+}
+.footer_single_card ul{
+    display: flex;
+    gap: 8px;
+}
+.footer_icons{
+    padding-left: 22px;
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+.footer_single_card ul li{
+    color: #FFAF37;
+}
+.footer_card_text h3{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+}
+.footer_card_text p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+}
+.footer_card_text p span{
+    color: #C4C4C4;
+    margin-right: 31px;
+}
+.another p span{
+    margin-right: 56px;
+}
+/* ;;;;;;;;; footer part end ;;;;;;;;;;;; */
